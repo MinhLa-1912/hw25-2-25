@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .info-container {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info-container">
+        <h2>Thông Tin Cá Nhân</h2>
+        <p id="name"></p>
+        <p id="age"></p>
+        <p id="job"></p>
+        <p id="email"></p>
+    </div>
+
+    <script>
+        // Khai báo biến
+        let fullName = "Nguyễn Văn A";
+        let age = 25;
+        let job = "Lập trình viên";
+        let email = "nguyenvana@example.com";
+
+        // In dữ liệu ra giao diện
+        document.getElementById("name").innerText = "Họ và tên: " + fullName;
+        document.getElementById("age").innerText = "Tuổi: " + age;
+        document.getElementById("job").innerText = "Nghề nghiệp: " + job;
+        document.getElementById("email").innerText = "Email: " + email;
+    </script>
+
+</body>
+</html>
